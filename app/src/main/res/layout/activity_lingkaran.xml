@@ -12,36 +12,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.lingkaran">
 
-    <Button
-        android:text="Kembali"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonbacklingkaran"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp" />
-
-    <Button
-        android:text="Hitung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonOk"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/buttonbacklingkaran"
-        android:layout_alignStart="@+id/buttonbacklingkaran"
-        android:layout_marginTop="53dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginTop="14dp"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/buttonOk"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
-
     <ImageView
         app:srcCompat="@drawable/lingkaran"
         android:id="@+id/imageView"
@@ -57,7 +27,37 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/editTextJari"
         android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHasil"
+        android:layout_below="@+id/buttonOk"
+        android:layout_alignLeft="@+id/editTextJari"
+        android:layout_alignStart="@+id/editTextJari"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/buttonbacklingkaran"
+        android:layout_alignRight="@+id/editTextJari"
+        android:layout_alignEnd="@+id/editTextJari" />
+
+    <Button
+        android:text="Hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOk"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editTextJari"
+        android:layout_alignLeft="@+id/buttonbacklingkaran"
+        android:layout_alignStart="@+id/buttonbacklingkaran" />
+
+    <Button
+        android:text="Kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonbacklingkaran"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
