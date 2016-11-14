@@ -38,47 +38,47 @@
             android:textSize="36sp" />
 
         <ImageButton
-            android:id="@+id/imageButton24"
+            android:id="@+id/persegi"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignLeft="@+id/imageButton22"
-            android:layout_alignStart="@+id/imageButton22"
-            android:layout_below="@+id/imageButton22"
+            android:layout_alignLeft="@+id/lingkaran"
+            android:layout_alignStart="@+id/lingkaran"
+            android:layout_below="@+id/lingkaran"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/persegi2" />
 
         <ImageButton
-            android:id="@+id/imageButton26"
+            android:id="@+id/trapesium"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignLeft="@+id/imageButton24"
-            android:layout_alignStart="@+id/imageButton24"
-            android:layout_below="@+id/imageButton24"
+            android:layout_alignLeft="@+id/persegi"
+            android:layout_alignStart="@+id/persegi"
+            android:layout_below="@+id/persegi"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/trapesium" />
 
         <ImageButton
-            android:id="@+id/imageButton27"
+            android:id="@+id/jajargenjang"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/imageButton25"
-            android:layout_toEndOf="@+id/imageButton26"
-            android:layout_toRightOf="@+id/imageButton26"
+            android:layout_below="@+id/segitiga"
+            android:layout_toEndOf="@+id/trapesium"
+            android:layout_toRightOf="@+id/trapesium"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/jajargenjang" />
 
         <ImageButton
-            android:id="@+id/imageButton29"
+            android:id="@+id/layanglayang"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/imageButton27"
-            android:layout_toEndOf="@+id/imageButton28"
-            android:layout_toRightOf="@+id/imageButton28"
+            android:layout_below="@+id/jajargenjang"
+            android:layout_toEndOf="@+id/ketupat"
+            android:layout_toRightOf="@+id/ketupat"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/layanglayang" />
 
         <ImageButton
-            android:id="@+id/imageButton22"
+            android:id="@+id/lingkaran"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_alignParentLeft="true"
@@ -94,37 +94,37 @@
             app:srcCompat="@drawable/lingkaran" />
 
         <ImageButton
-            android:id="@+id/imageButton23"
+            android:id="@+id/segitiga"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignTop="@+id/imageButton22"
-            android:layout_toEndOf="@+id/imageButton22"
-            android:layout_toRightOf="@+id/imageButton22"
-            android:cropToPadding="false"
-            android:elevation="0dp"
-            android:saveEnabled="false"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/persegipanjang2" />
-
-        <ImageButton
-            android:id="@+id/imageButton25"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@+id/imageButton22"
-            android:layout_toEndOf="@+id/imageButton24"
-            android:layout_toRightOf="@+id/imageButton24"
+            android:layout_below="@+id/lingkaran"
+            android:layout_toEndOf="@+id/persegi"
+            android:layout_toRightOf="@+id/persegi"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/segitiga" />
 
         <ImageButton
-            android:id="@+id/imageButton28"
+            android:id="@+id/ketupat"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignLeft="@+id/imageButton26"
+            android:layout_alignLeft="@+id/trapesium"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/imageButton26"
+            android:layout_alignStart="@+id/trapesium"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ketupat" />
+
+        <ImageButton
+            android:id="@+id/persegipanjang"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:cropToPadding="false"
+            android:elevation="0dp"
+            android:saveEnabled="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/persegipanjang2"
+            android:layout_above="@+id/segitiga"
+            android:layout_toRightOf="@+id/persegi"
+            android:layout_toEndOf="@+id/persegi" />
 
     </RelativeLayout>
 </ScrollView>
