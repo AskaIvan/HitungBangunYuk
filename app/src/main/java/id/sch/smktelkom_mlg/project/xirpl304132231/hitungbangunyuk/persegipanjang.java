@@ -15,11 +15,11 @@ public class persegipanjang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_persegipanjang);
 
-        etLebar = (EditText)findViewById(R.id.editTextLebar);
-        etPanjang = (EditText) findViewById(R.id.editTextPanjang);
+        etLebar = (EditText)findViewById(R.id.editTexTinggiT);
+        etPanjang = (EditText) findViewById(R.id.editTextAlas1T);
         tvHasil = (TextView) findViewById(R.id.textView3);
 
-        findViewById(R.id.buttonHitung).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonHitungT).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 doHitung();
