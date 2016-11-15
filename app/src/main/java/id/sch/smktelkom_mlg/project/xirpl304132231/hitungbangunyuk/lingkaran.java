@@ -35,7 +35,9 @@ public class lingkaran extends AppCompatActivity {
 
     private void doHitung() {
         int a = etJari.getText().toString().isEmpty()?0:Integer.parseInt(etJari.getText().toString());
-
-        tvHasil.setText((int) (3.14*a*a));
+        //luas
+        tvHasil.setText(22/7*a*a);
+        //keliling
+        tvHasil.setText(22/7*2*a);
     }
 }
