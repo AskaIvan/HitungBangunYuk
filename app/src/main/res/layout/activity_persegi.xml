@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_persegi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.persegi">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextSisi"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="Persegi"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/persegi"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        app:srcCompat="@drawable/persegi2" />
+
+    <Button
+        android:id="@+id/buttonHitung"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/persegi"
+        android:text="HITUNG" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/buttonHitung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/editTextSisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignTop="@+id/persegi"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="s ="
+        android:inputType="number" />
+
+</RelativeLayout>
