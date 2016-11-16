@@ -9,32 +9,22 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.persegipanjang">
-
-    <EditText
-        android:id="@+id/editTextD1lay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="194dp"
-        android:ems="10"
-        android:hint="        Masukan Diagonal 1"
-        android:inputType="textPersonName"/>
+                tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.Layang">
 
     <EditText
         android:id="@+id/editTextD2lay"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editTextD1lay"
         android:layout_alignStart="@+id/editTextD1lay"
         android:layout_below="@+id/editTextD1lay"
         android:ems="10"
-        android:hint="        Masukan Diagonal 2"
-        android:inputType="textPersonName"/>
+        android:hint="Diagonal 2"
+        android:inputType="textPersonName"
+        android:textAlignment="center"/>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewHasilLayang"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_above="@+id/buttonBackLayang"
@@ -49,23 +39,63 @@
         android:layout_centerHorizontal="true"
         android:text="Kembali"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_marginTop="28dp"
-        app:srcCompat="@drawable/layanglayang"/>
-
     <Button
-        android:id="@+id/buttonHitungKetupat"
+        android:id="@+id/buttonHitungLayang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView3"
+        android:layout_above="@+id/textViewHasilLayang"
         android:layout_alignLeft="@+id/buttonBackLayang"
         android:layout_alignStart="@+id/buttonBackLayang"
         android:layout_marginBottom="18dp"
         android:text="Hitung"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/textViewHasilLayang"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewHasilLayang"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/layanglayang"/>
+
+    <EditText
+        android:id="@+id/editTextD1lay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/editTextSisia"
+        android:layout_toStartOf="@+id/editTextSisia"
+        android:ems="10"
+        android:hint="Diagonal 1"
+        android:inputType="textPersonName"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editTextSisia"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextSisib"
+        android:layout_toEndOf="@+id/buttonHitungLayang"
+        android:layout_toRightOf="@+id/buttonHitungLayang"
+        android:ems="10"
+        android:hint="Sisi a"
+        android:inputType="textPersonName"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editTextSisib"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextD2lay"
+        android:layout_alignBottom="@+id/editTextD2lay"
+        android:layout_alignLeft="@+id/editTextSisia"
+        android:layout_alignStart="@+id/editTextSisia"
+        android:ems="10"
+        android:hint="Sisi b"
+        android:inputType="textPersonName"
+        android:textAlignment="center"/>
 </RelativeLayout>
