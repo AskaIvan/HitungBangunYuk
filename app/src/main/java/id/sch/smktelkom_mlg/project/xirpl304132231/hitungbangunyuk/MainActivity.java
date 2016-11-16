@@ -24,5 +24,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,persegipanjang.class));
             }
         });
+        findViewById(R.id.ketupat).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ketupat.class));
+            }
+        });
+        findViewById(R.id.layanglayang).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Layang.class));
+            }
+        });
     }
 }
