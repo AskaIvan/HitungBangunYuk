@@ -65,11 +65,10 @@
         android:layout_alignBottom="@+id/buttonHitungT"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/imageView2"
         android:layout_marginBottom="49dp"
         android:ems="10"
         android:hint="P ="
-        android:inputType="number" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/tvHasilPersegiPanjang"
