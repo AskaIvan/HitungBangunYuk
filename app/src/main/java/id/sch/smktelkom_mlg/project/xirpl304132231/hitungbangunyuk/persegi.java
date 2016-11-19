@@ -19,7 +19,7 @@ public class persegi extends AppCompatActivity {
         setContentView(R.layout.activity_persegi);
 
         etSisi = (EditText) findViewById(R.id.editTextSisi);
-        tvHasil = (TextView) findViewById(R.id.textViewHasil);
+        tvHasil = (TextView) findViewById(R.id.tvHasilPersegi);
 
         findViewById(R.id.buttonHitungT).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,18 +27,37 @@ public class persegi extends AppCompatActivity {
                 doHitung();
             }
 
-            private void doHitung() {
-                int a = etSisi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etSisi.getText().toString());
 
-                //luas
-                int luas = (a * a);
-                //keliling
-                int keliling = (4 * a);
-
-                tvHasil.setText("Luas Persegi = " + luas + "\n" + "Keliling Persegi = " + keliling);
-            }
         });
+    }
 
+    private void doHitung() {
+        if (isValid()) {
+            int a = etSisi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etSisi.getText().toString());
 
+            //luas
+            int luas = (a * a);
+            //keliling
+            int keliling = (4 * a);
+
+            tvHasil.setText("Luas Persegi = " + luas + "\n" + "Keliling Persegi = " + keliling);
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String a = etSisi.getText().toString();
+
+        if (a.isEmpty()) {
+            etSisi.setError("Diagonal 1 belum diisi");
+            valid = false;
+        } else if (a.length() > 2) {
+            etSisi.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etSisi.setError(null);
+        }
+        return valid;
     }
 }

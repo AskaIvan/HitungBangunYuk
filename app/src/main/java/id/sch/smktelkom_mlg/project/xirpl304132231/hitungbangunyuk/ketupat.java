@@ -29,21 +29,43 @@ public class ketupat extends AppCompatActivity {
                 doHitung();
             }
         });
-
-        findViewById(R.id.buttonBackKetupat).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
     }
 
     private void doHitung() {
-        double a = etD1.getText().toString().isEmpty() ? 0 : Double.parseDouble(etD1.getText().toString());
-        double b = etD2.getText().toString().isEmpty() ? 0 : Double.parseDouble(etD2.getText().toString());
-        //luas
-        tvHasil.setText((int) (0.5 * a * b));
-        //keliling
-        tvHasil.setText((int) Math.sqrt(Math.pow(0.5 * a, 2) + Math.pow(0.5 * b, 2)));
+        if (isValid()) {
+            double a = etD1.getText().toString().isEmpty() ? 0 : Double.parseDouble(etD1.getText().toString());
+            double b = etD2.getText().toString().isEmpty() ? 0 : Double.parseDouble(etD2.getText().toString());
+            //luas
+            tvHasil.setText((int) (0.5 * a * b));
+            //keliling
+            tvHasil.setText((int) Math.sqrt(Math.pow(0.5 * a, 2) + Math.pow(0.5 * b, 2)));
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String a = etD1.getText().toString();
+        String b = etD2.getText().toString();
+
+        if (a.isEmpty()) {
+            etD1.setError("Diagonal 1 belum diisi");
+            valid = false;
+        } else if (a.length() > 2) {
+            etD1.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etD1.setError(null);
+        }
+        if (b.isEmpty()) {
+            etD2.setError("Diagonal 2 belum diisi");
+            valid = false;
+        } else if (b.length() > 2) {
+            etD2.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etD2.setError(null);
+        }
+        return valid;
     }
 }

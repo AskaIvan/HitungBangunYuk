@@ -30,10 +30,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ketupat.class));
             }
         });
-        findViewById(R.id.layanglayang).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.jajargenjang).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Layang.class));
+                startActivity(new Intent(MainActivity.this, jajargenjang.class));
+            }
+        });
+        findViewById(R.id.persegi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, persegi.class));
+            }
+        });
+        findViewById(R.id.segitiga).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, segitiga.class));
             }
         });
     }

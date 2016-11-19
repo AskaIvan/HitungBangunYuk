@@ -65,14 +65,14 @@
         android:layout_alignBottom="@+id/buttonHitungT"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_be="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
         android:layout_marginBottom="49dp"
         android:ems="10"
         android:hint="P ="
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/tvHasil"
+        android:id="@+id/tvHasilPersegiPanjang"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_below="@+id/buttonHitungT"

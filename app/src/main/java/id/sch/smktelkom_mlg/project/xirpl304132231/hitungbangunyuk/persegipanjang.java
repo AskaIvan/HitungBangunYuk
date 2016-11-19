@@ -15,33 +15,54 @@ public class persegipanjang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_persegipanjang);
 
-        etLebar = (EditText)findViewById(R.id.editTexTinggiT);
+        etLebar = (EditText) findViewById(R.id.editTextLebar);
         etPanjang = (EditText) findViewById(R.id.editTextPanjang);
-        tvHasil = (TextView) findViewById(R.id.textView3);
+        tvHasil = (TextView) findViewById(R.id.tvHasilPersegiPanjang);
 
         findViewById(R.id.buttonHitungT).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 doHitung();
             }
-
-            private void doHitung()
-            {
-                int a = etLebar.getText().toString().isEmpty()?0:Integer.parseInt(etLebar.getText().toString());
-                int b = etPanjang.getText().toString().isEmpty()?0:Integer.parseInt(etPanjang.getText().toString());
-
-                //luas
-                tvHasil.setText(a*b);
-                //keliling
-                tvHasil.setText(a+b+a+b);
-            }
         });
+    }
 
-        findViewById(R.id.buttonBackPersegipanjang).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+    private void doHitung() {
+        if (isValid()) {
+            int a = etLebar.getText().toString().isEmpty() ? 0 : Integer.parseInt(etLebar.getText().toString());
+            int b = etPanjang.getText().toString().isEmpty() ? 0 : Integer.parseInt(etPanjang.getText().toString());
+
+            //luas
+            tvHasil.setText(a * b);
+            //keliling
+            tvHasil.setText(a + b + a + b);
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String a = etLebar.getText().toString();
+        String b = etPanjang.getText().toString();
+
+        if (a.isEmpty()) {
+            etLebar.setError("Diagonal 1 belum diisi");
+            valid = false;
+        } else if (a.length() > 2) {
+            etLebar.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etLebar.setError(null);
+        }
+        if (b.isEmpty()) {
+            etPanjang.setError("Diagonal 2 belum diisi");
+            valid = false;
+        } else if (b.length() > 2) {
+            etPanjang.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etPanjang.setError(null);
+        }
+        return valid;
     }
 }

@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/segitiga" />
 
     <TextView
-        android:id="@+id/tvHasil"
+        android:id="@+id/tvHasilSegitiga"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_below="@+id/buttonHitung"

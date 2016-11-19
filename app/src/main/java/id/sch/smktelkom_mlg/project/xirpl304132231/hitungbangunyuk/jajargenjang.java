@@ -30,18 +30,59 @@ public class jajargenjang extends AppCompatActivity {
                 doHitung();
             }
 
-            private void doHitung() {
-                int a = etTinggiJ.getText().toString().isEmpty() ? 0 : Integer.parseInt(etTinggiJ.getText().toString());
-                int b = etAlasJ.getText().toString().isEmpty() ? 0 : Integer.parseInt(etAlasJ.getText().toString());
-                int c = etMiring.getText().toString().isEmpty() ? 0 : Integer.parseInt(etMiring.getText().toString());
 
-                //luas
-                int luas = (a * b);
-                //keliling
-                int a1 = (2 * (b + c));
-
-                tvHasil.setText("Luas Jajar Genjang = " + luas + "\n" + "Keliling Jajar Genjang = " + a1);
-            }
         });
+    }
+
+    private void doHitung() {
+        if (isValid()) {
+            int a = etTinggiJ.getText().toString().isEmpty() ? 0 : Integer.parseInt(etTinggiJ.getText().toString());
+            int b = etAlasJ.getText().toString().isEmpty() ? 0 : Integer.parseInt(etAlasJ.getText().toString());
+            int c = etMiring.getText().toString().isEmpty() ? 0 : Integer.parseInt(etMiring.getText().toString());
+
+            //luas
+            int luas = (a * b);
+            //keliling
+            int a1 = (2 * (b + c));
+
+            tvHasil.setText("Luas Jajar Genjang = " + luas + "\n" + "Keliling Jajar Genjang = " + a1);
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String a = etTinggiJ.getText().toString();
+        String b = etAlasJ.getText().toString();
+        String c = etMiring.getText().toString();
+
+        if (a.isEmpty()) {
+            etTinggiJ.setError("Tinggi belum diisi");
+            valid = false;
+        } else if (a.length() > 2) {
+            etTinggiJ.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etTinggiJ.setError(null);
+        }
+        if (b.isEmpty()) {
+            etAlasJ.setError("Alas belum diisi");
+            valid = false;
+        } else if (b.length() > 2) {
+            etAlasJ.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etAlasJ.setError(null);
+        }
+        if (c.isEmpty()) {
+            etMiring.setError("Sisi Miring belum diisi");
+            valid = false;
+        } else if (c.length() > 2) {
+            etMiring.setError("Hanya bisa puluhan");
+            valid = false;
+        } else {
+            etMiring.setError(null);
+        }
+        return valid;
     }
 }
