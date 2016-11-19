@@ -6,58 +6,63 @@
     android:id="@+id/activity_lingkaran"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.lingkaran">
 
+    <Button
+        android:id="@+id/buttonOk"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:text="HITUNG" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="casual"
+        android:text="Lingkaran"
+        android:textSize="30sp" />
+
     <ImageView
-        app:srcCompat="@drawable/lingkaran"
         android:id="@+id/imageView"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+        app:srcCompat="@drawable/lingkaran" />
 
     <EditText
-        android:hint="        Masukan Jari-Jari"
+        android:id="@+id/editTextJari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="55dp"
         android:ems="10"
-        android:id="@+id/editTextJari"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:hint="r ="
+        android:inputType="textPersonName" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewHasil"
+        android:id="@+id/tvHasil"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/buttonOk"
-        android:layout_alignLeft="@+id/editTextJari"
-        android:layout_alignStart="@+id/editTextJari"
-        android:layout_marginTop="15dp"
-        android:layout_above="@+id/buttonbacklingkaran"
-        android:layout_alignRight="@+id/editTextJari"
-        android:layout_alignEnd="@+id/editTextJari" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
 
-    <Button
-        android:text="Hitung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonOk"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/editTextJari"
-        android:layout_alignLeft="@+id/buttonbacklingkaran"
-        android:layout_alignStart="@+id/buttonbacklingkaran" />
-
-    <Button
-        android:text="Kembali"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonbacklingkaran"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>

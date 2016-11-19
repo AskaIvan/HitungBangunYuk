@@ -5,72 +5,97 @@
     android:id="@+id/activity_persegipanjang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.persegipanjang">
+    tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.jajargenjang">
 
     <TextView
-        android:layout_width="150dp"
         android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_above="@+id/buttonBackPersegipanjang"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:layout_height="50dp" />
+        android:layout_marginBottom="14dp" />
 
     <TextView
-        android:text="Jajar Genjang"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:fontFamily="casual"
-        android:textSize="30sp"
-        android:layout_marginTop="21dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="casual"
+        android:text="Jajar Genjang"
+        android:textSize="30sp" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/jajargenjang"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
-
-    <EditText
-        android:hint="t ="
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editTexTinggij"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="29dp" />
-
-    <EditText
-        android:hint="a ="
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editTextAlasJ"
-        android:layout_above="@+id/buttonHitungJ"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        app:srcCompat="@drawable/jajargenjang" />
 
     <Button
-        android:text="HITUNG"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/buttonHitungJ"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_marginTop="19dp"
-        android:layout_below="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="19dp"
+        android:text="HITUNG" />
+
+    <EditText
+        android:id="@+id/editTextTinggiJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAlasJ"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="t ="
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextMiring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextTinggiJ"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextTinggiJ"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:ems="10"
+        android:hint="m ="
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAlasJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonHitungJ"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="a ="
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/buttonHitungJ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
 
 </RelativeLayout>
