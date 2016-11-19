@@ -16,7 +16,7 @@ public class persegi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_persegipanjang);
+        setContentView(R.layout.activity_persegi);
 
         etSisi = (EditText) findViewById(R.id.editTextSisi);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);

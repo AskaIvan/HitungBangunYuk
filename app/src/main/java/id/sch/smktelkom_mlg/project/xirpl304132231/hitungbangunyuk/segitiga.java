@@ -17,7 +17,7 @@ public class segitiga extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_persegipanjang);
+        setContentView(R.layout.activity_segitiga);
 
         etTinggi = (EditText) findViewById(R.id.editTextTinggi);
         etAlas = (EditText) findViewById(R.id.editTextAlas);
