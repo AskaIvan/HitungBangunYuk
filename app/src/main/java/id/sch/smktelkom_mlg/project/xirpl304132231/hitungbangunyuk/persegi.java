@@ -31,9 +31,11 @@ public class persegi extends AppCompatActivity {
                 int a = etSisi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etSisi.getText().toString());
 
                 //luas
-                tvHasil.setText(a * a);
+                int luas = (a * a);
                 //keliling
-                tvHasil.setText(4 * a);
+                int keliling = (4 * a);
+
+                tvHasil.setText("Luas Persegi = " + luas + "\n" + "Keliling Persegi = " + keliling);
             }
         });
 

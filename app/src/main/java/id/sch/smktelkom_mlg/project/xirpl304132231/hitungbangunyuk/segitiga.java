@@ -32,11 +32,12 @@ public class segitiga extends AppCompatActivity {
             private void doHitung() {
                 int a = etTinggi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etTinggi.getText().toString());
                 int b = etAlas.getText().toString().isEmpty() ? 0 : Integer.parseInt(etAlas.getText().toString());
-
                 //luas
-                tvHasil.setText(1 / 2 * b * a);
+                int luas = (1 / 2 * b * a);
                 //keliling
-                tvHasil.setText(a + b + a + b);
+                int c = (int) (Math.pow(b / 2, 2) + Math.pow(a, 2));
+
+                tvHasil.setText("Luas Segitiga = " + luas + "\n" + "Keliling Segitiga = " + (b + 2 * c));
             }
         });
 
