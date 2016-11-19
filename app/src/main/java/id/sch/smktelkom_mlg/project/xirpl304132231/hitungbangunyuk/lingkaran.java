@@ -3,6 +3,7 @@ package id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -10,6 +11,8 @@ public class lingkaran extends AppCompatActivity {
 
     EditText etJari;
     TextView tvHasil;
+    Button buttonLingkaran;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +20,7 @@ public class lingkaran extends AppCompatActivity {
 
         etJari = (EditText) findViewById(R.id.editTextJari);
         tvHasil = (TextView) findViewById(R.id.tvHasilLingkaran);
+        buttonLingkaran = (Button) findViewById(R.id.buttonOk);
 
         findViewById(R.id.buttonOk).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,10 +33,8 @@ public class lingkaran extends AppCompatActivity {
     private void doHitung() {
         if (isValid()) {
             int a = etJari.getText().toString().isEmpty() ? 0 : Integer.parseInt(etJari.getText().toString());
-            //luas
-            tvHasil.setText(22 / 7 * a * a);
-            //keliling
-            tvHasil.setText(22 / 7 * 2 * a);
+            //luas & keliling
+            tvHasil.setText("Luas :" + (int) (Math.PI * a * a) + "\n" + "Keliling :" + (int) (Math.PI * 2 * a));
         }
     }
 
@@ -42,7 +44,7 @@ public class lingkaran extends AppCompatActivity {
         String a = etJari.getText().toString();
 
         if (a.isEmpty()) {
-            etJari.setError("Tinggi belum diisi");
+            etJari.setError("Jari-jari belum diisi");
             valid = false;
         } else if (a.length() > 2) {
             etJari.setError("Hanya bisa puluhan");
