@@ -1,7 +1,7 @@
 package id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -16,7 +16,7 @@ public class persegipanjang extends AppCompatActivity {
         setContentView(R.layout.activity_persegipanjang);
 
         etLebar = (EditText)findViewById(R.id.editTexTinggiT);
-        etPanjang = (EditText) findViewById(R.id.editTextAlas1T);
+        etPanjang = (EditText) findViewById(R.id.editTextPanjang);
         tvHasil = (TextView) findViewById(R.id.textView3);
 
         findViewById(R.id.buttonHitungT).setOnClickListener(new View.OnClickListener() {

@@ -55,7 +55,7 @@
             android:layout_alignStart="@+id/persegi"
             android:layout_below="@+id/persegi"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/trapesium" />
+            app:srcCompat="@drawable/ketupat" />
 
         <ImageButton
             android:id="@+id/jajargenjang"
@@ -66,16 +66,6 @@
             android:layout_toRightOf="@+id/trapesium"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/jajargenjang" />
-
-        <ImageButton
-            android:id="@+id/layanglayang"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@+id/jajargenjang"
-            android:layout_toEndOf="@+id/ketupat"
-            android:layout_toRightOf="@+id/ketupat"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/layanglayang" />
 
         <ImageButton
             android:id="@+id/lingkaran"
@@ -104,27 +94,17 @@
             app:srcCompat="@drawable/segitiga" />
 
         <ImageButton
-            android:id="@+id/ketupat"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignLeft="@+id/trapesium"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/trapesium"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ketupat" />
-
-        <ImageButton
             android:id="@+id/persegipanjang"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_above="@+id/segitiga"
+            android:layout_toEndOf="@+id/persegi"
+            android:layout_toRightOf="@+id/persegi"
             android:cropToPadding="false"
             android:elevation="0dp"
             android:saveEnabled="false"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/persegipanjang2"
-            android:layout_above="@+id/segitiga"
-            android:layout_toRightOf="@+id/persegi"
-            android:layout_toEndOf="@+id/persegi" />
+            app:srcCompat="@drawable/persegipanjang2" />
 
     </RelativeLayout>
 </ScrollView>
