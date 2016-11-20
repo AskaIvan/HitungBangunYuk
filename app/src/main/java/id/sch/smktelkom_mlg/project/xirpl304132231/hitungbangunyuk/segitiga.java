@@ -3,6 +3,7 @@ package id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ public class segitiga extends AppCompatActivity {
     EditText etTinggi;
     EditText etAlas;
     TextView tvHasil;
+    Button buttonSegitiga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +24,13 @@ public class segitiga extends AppCompatActivity {
         etTinggi = (EditText) findViewById(R.id.editTextTinggi);
         etAlas = (EditText) findViewById(R.id.editTextAlas);
         tvHasil = (TextView) findViewById(R.id.tvHasilSegitiga);
+        buttonSegitiga = (Button) findViewById(R.id.buttonHitungSegitiga);
 
-        findViewById(R.id.buttonHitung).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonHitungSegitiga).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 doHitung();
             }
-
-
         });
 
     }
@@ -38,12 +39,9 @@ public class segitiga extends AppCompatActivity {
         if (isValid()) {
             int a = etTinggi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etTinggi.getText().toString());
             int b = etAlas.getText().toString().isEmpty() ? 0 : Integer.parseInt(etAlas.getText().toString());
-            //luas
-            int luas = (1 / 2 * b * a);
-            //keliling
-            int c = (int) (Math.pow(b / 2, 2) + Math.pow(a, 2));
 
-            tvHasil.setText("Luas Segitiga = " + luas + "\n" + "Keliling Segitiga = " + (b + 2 * c));
+            //luas dan keliling
+            tvHasil.setText("Luas Segitiga = " + (1 / 2 * b * a) + "\n" + "Keliling Segitiga = " + (b + 2 * (int) (Math.pow(b / 2, 2) + (int) Math.pow(a, 2))));
         }
     }
 
@@ -54,7 +52,7 @@ public class segitiga extends AppCompatActivity {
         String b = etAlas.getText().toString();
 
         if (a.isEmpty()) {
-            etTinggi.setError("Diagonal 1 belum diisi");
+            etTinggi.setError("Tinggi belum diisi");
             valid = false;
         } else if (a.length() > 2) {
             etTinggi.setError("Hanya bisa puluhan");
@@ -62,8 +60,9 @@ public class segitiga extends AppCompatActivity {
         } else {
             etTinggi.setError(null);
         }
+
         if (b.isEmpty()) {
-            etAlas.setError("Diagonal 2 belum diisi");
+            etAlas.setError("Alas belum diisi");
             valid = false;
         } else if (b.length() > 2) {
             etAlas.setError("Hanya bisa puluhan");
@@ -71,6 +70,7 @@ public class segitiga extends AppCompatActivity {
         } else {
             etAlas.setError(null);
         }
+
         return valid;
     }
 }

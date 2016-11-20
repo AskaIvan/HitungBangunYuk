@@ -14,7 +14,7 @@
 
 
     <ImageView
-        android:id="@+id/segitiga"
+        android:id="@+id/imageView"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_below="@+id/textView"
@@ -25,7 +25,7 @@
         android:id="@+id/tvHasilSegitiga"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_below="@+id/buttonHitung"
+        android:layout_below="@+id/buttonHitungSegitiga"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
 
@@ -33,7 +33,7 @@
         android:id="@+id/editTextTinggi"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonHitung"
+        android:layout_above="@+id/buttonHitungSegitiga"
         android:layout_alignLeft="@+id/editTextAlas"
         android:layout_alignStart="@+id/editTextAlas"
         android:layout_marginBottom="94dp"
@@ -45,7 +45,7 @@
         android:id="@+id/editTextAlas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/segitiga"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:layout_marginLeft="46dp"
@@ -55,13 +55,13 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/buttonHitung"
+        android:id="@+id/buttonHitungSegitiga"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/segitiga"
+        android:layout_below="@+id/imageView"
         android:layout_marginTop="14dp"
         android:text="HITUNG" />
 

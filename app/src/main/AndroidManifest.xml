@@ -32,7 +32,13 @@
             android:name=".MainActivity"
             android:label="@string/app_name" />
         <activity android:name=".lingkaran" />
-        <activity android:name=".persegipanjang"></activity>
+        <activity android:name=".persegipanjang" />
+        <activity android:name=".persegi" />
+        <activity android:name=".segitiga" />
+        <activity android:name=".jajargenjang" />
+        <activity android:name=".ketupat" />
+
+
     </application>
 
 </manifest>
