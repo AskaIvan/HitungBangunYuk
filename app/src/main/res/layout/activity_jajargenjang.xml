@@ -90,7 +90,7 @@
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/tvHasil"
+        android:id="@+id/tvHasilJajarGenjang"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_below="@+id/buttonHitungJ"

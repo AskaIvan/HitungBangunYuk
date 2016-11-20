@@ -40,8 +40,11 @@ public class segitiga extends AppCompatActivity {
             int a = etTinggi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etTinggi.getText().toString());
             int b = etAlas.getText().toString().isEmpty() ? 0 : Integer.parseInt(etAlas.getText().toString());
 
+            double luas = (0.5 * b * a);
+            double keliling = (((Math.sqrt(Math.pow(b / 2, 2) + Math.pow(a, 2))) * 2) + b);
+
             //luas dan keliling
-            tvHasil.setText("Luas Segitiga = " + (1 / 2 * b * a) + "\n" + "Keliling Segitiga = " + (b + 2 * (int) (Math.pow(b / 2, 2) + (int) Math.pow(a, 2))));
+            tvHasil.setText("Luas Segitiga = " + luas + "\n" + "Keliling Segitiga = " + keliling);
         }
     }
 

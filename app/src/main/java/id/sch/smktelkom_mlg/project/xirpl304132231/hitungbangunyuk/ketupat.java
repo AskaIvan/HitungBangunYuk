@@ -36,9 +36,10 @@ public class ketupat extends AppCompatActivity {
             double a = etD1.getText().toString().isEmpty() ? 0 : Double.parseDouble(etD1.getText().toString());
             double b = etD2.getText().toString().isEmpty() ? 0 : Double.parseDouble(etD2.getText().toString());
             //luas
-            tvHasil.setText((int) (0.5 * a * b));
+            double luas = (int) (0.5 * a * b);
             //keliling
-            tvHasil.setText((int) Math.sqrt(Math.pow(0.5 * a, 2) + Math.pow(0.5 * b, 2)));
+            double keliling = (int) ((Math.sqrt(Math.pow(0.5 * a, 2) + Math.pow(0.5 * b, 2))) * 4);
+            tvHasil.setText("Luas ketupat = " + luas + "\n" + "Keliling ketupat = " + keliling);
         }
     }
 

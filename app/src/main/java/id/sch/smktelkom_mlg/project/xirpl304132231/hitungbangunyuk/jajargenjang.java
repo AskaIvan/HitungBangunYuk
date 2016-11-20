@@ -23,6 +23,8 @@ public class jajargenjang extends AppCompatActivity {
         etTinggiJ = (EditText) findViewById(R.id.editTextTinggiJ);
         etAlasJ = (EditText) findViewById(R.id.editTextAlasJ);
         etMiring = (EditText) findViewById(R.id.editTextMiring);
+        tvHasil = (TextView) findViewById(R.id.tvHasilJajarGenjang);
+
 
         findViewById(R.id.buttonHitungJ).setOnClickListener(new View.OnClickListener() {
             @Override
