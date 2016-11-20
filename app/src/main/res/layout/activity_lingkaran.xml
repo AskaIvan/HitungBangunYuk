@@ -53,16 +53,21 @@
         android:layout_marginLeft="54dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="55dp"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
         android:ems="10"
         android:hint="r ="
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/tvHasilLingkaran"
         android:layout_width="300dp"
         android:layout_height="100dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/buttonOk"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp" />
 
 </RelativeLayout>

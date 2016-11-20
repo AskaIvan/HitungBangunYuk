@@ -26,21 +26,12 @@
         android:id="@+id/tvHasilPersegi"
         android:layout_width="300dp"
         android:layout_height="200dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/buttonHitungPersegi"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp" />
-
-    <EditText
-        android:id="@+id/editTextSisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_marginTop="96dp"
-        android:ems="10"
-        android:hint="s ="
-        android:inputType="number" />
 
     <TextView
         android:id="@+id/textView"
@@ -55,10 +46,22 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/persegi2" />
+
+    <EditText
+        android:id="@+id/editTextSisi"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonHitungPersegi"
+        android:layout_marginBottom="56dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:ems="10"
+        android:hint="s ="
+        android:inputType="number" />
 
 </RelativeLayout>

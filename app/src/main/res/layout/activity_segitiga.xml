@@ -15,8 +15,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/segitiga" />
@@ -25,34 +25,12 @@
         android:id="@+id/tvHasilSegitiga"
         android:layout_width="300dp"
         android:layout_height="200dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
         android:layout_below="@+id/buttonHitungSegitiga"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
-
-    <EditText
-        android:id="@+id/editTextTinggi"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonHitungSegitiga"
-        android:layout_alignLeft="@+id/editTextAlas"
-        android:layout_alignStart="@+id/editTextAlas"
-        android:layout_marginBottom="94dp"
-        android:ems="10"
-        android:hint="t ="
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/editTextAlas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginLeft="46dp"
-        android:layout_marginStart="46dp"
-        android:ems="10"
-        android:hint="a ="
-        android:inputType="number" />
 
     <Button
         android:id="@+id/buttonHitungSegitiga"
@@ -75,4 +53,34 @@
         android:fontFamily="casual"
         android:text="Segitiga"
         android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextAlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvHasilSegitiga"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:ems="10"
+        android:hint="a ="
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextTinggi"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAlas"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/editTextAlas"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/editTextAlas"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="t ="
+        android:inputType="number" />
 </RelativeLayout>

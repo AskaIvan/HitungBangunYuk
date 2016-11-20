@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3"
         android:layout_below="@+id/textView3"
@@ -51,35 +51,8 @@
         android:text="HITUNG" />
 
     <EditText
-        android:id="@+id/editTextTinggiJ"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextAlasJ"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginBottom="14dp"
-        android:ems="10"
-        android:hint="t ="
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/editTextMiring"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editTextTinggiJ"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editTextTinggiJ"
-        android:layout_marginTop="14dp"
-        android:layout_toEndOf="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView2"
-        android:ems="10"
-        android:hint="m ="
-        android:inputType="textPersonName" />
-
-    <EditText
         android:id="@+id/editTextAlasJ"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/buttonHitungJ"
         android:layout_alignParentEnd="true"
@@ -93,8 +66,37 @@
         android:id="@+id/tvHasilJajarGenjang"
         android:layout_width="300dp"
         android:layout_height="100dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
         android:layout_below="@+id/buttonHitungJ"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp" />
+
+    <EditText
+        android:id="@+id/editTextMiring"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextTinggiJ"
+        android:layout_alignBottom="@+id/editTextTinggiJ"
+        android:layout_alignEnd="@+id/editTextTinggiJ"
+        android:layout_alignRight="@+id/editTextTinggiJ"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:hint="m ="
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextTinggiJ"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAlasJ"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="t ="
+        android:inputType="number" />
 
 </RelativeLayout>
