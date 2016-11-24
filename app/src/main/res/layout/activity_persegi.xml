@@ -64,4 +64,13 @@
         android:hint="s ="
         android:inputType="number" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/questbutton" />
+
 </RelativeLayout>

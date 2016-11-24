@@ -37,8 +37,7 @@
         <activity android:name=".segitiga" />
         <activity android:name=".jajargenjang" />
         <activity android:name=".ketupat" />
-
-
+        <activity android:name=".pembahasanPersegi"></activity>
     </application>
 
 </manifest>
