@@ -5,72 +5,67 @@
     android:id="@+id/activity_persegi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@mipmap/hai"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.persegi">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/persegi2"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
     <Button
         android:id="@+id/buttonHitungPersegi"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:text="HITUNG"
+        android:layout_marginTop="11dp"
         android:layout_below="@+id/imageView"
-        android:text="HITUNG" />
-
-    <TextView
-        android:id="@+id/tvHasilPersegi"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_below="@+id/buttonHitungPersegi"
-        android:layout_marginTop="17dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:fontFamily="casual"
-        android:text="Persegi"
-        android:textSize="30sp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/persegi2" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editTextSisi"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonHitungPersegi"
-        android:layout_marginBottom="56dp"
-        android:layout_toLeftOf="@+id/imageView"
-        android:layout_toStartOf="@+id/imageView"
         android:ems="10"
         android:hint="s ="
-        android:inputType="number" />
+        android:inputType="number"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_marginTop="57dp" />
 
-    <ImageButton
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_help"
-        android:layout_above="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/questbutton" />
+        android:fontFamily="casual"
+        android:text="Persegi"
+        android:textSize="30sp"
+        android:textStyle="normal|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvHasilPersegi"
+        android:layout_width="300dp"
+        android:fontFamily="casual"
+        android:textSize="30sp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editTextSisi"
+        android:layout_alignStart="@+id/editTextSisi"
+        android:textColor="?android:attr/statusBarColor"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

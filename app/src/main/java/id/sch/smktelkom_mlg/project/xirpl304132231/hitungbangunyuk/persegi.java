@@ -1,6 +1,5 @@
 package id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,13 +20,6 @@ public class persegi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_persegi);
-
-        findViewById(R.id.questbutton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(persegi.this,pembahasanPersegi.class));
-            }
-        });
 
         etSisi = (EditText) findViewById(R.id.editTextSisi);
         tvHasil = (TextView) findViewById(R.id.tvHasilPersegi);
