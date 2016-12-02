@@ -1,110 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/activity_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_light"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.MainActivity">
+</android.support.v7.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="1"
-            android:text="b a n g u n    y u k !"
-            android:textIsSelectable="false"
-            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="1"
-            android:text="H I T U N G"
-            android:textSize="36sp" />
 
-        <ImageButton
-            android:id="@+id/persegi"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignLeft="@+id/lingkaran"
-            android:layout_alignStart="@+id/lingkaran"
-            android:layout_below="@+id/lingkaran"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/persegi2" />
-
-        <ImageButton
-            android:id="@+id/ketupat"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignLeft="@+id/persegi"
-            android:layout_alignStart="@+id/persegi"
-            android:layout_below="@+id/persegi"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ketupat" />
-
-        <ImageButton
-            android:id="@+id/jajargenjang"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@+id/segitiga"
-            android:layout_toEndOf="@+id/ketupat"
-            android:layout_toRightOf="@+id/ketupat"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/jajargenjang" />
-
-        <ImageButton
-            android:id="@+id/lingkaran"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView4"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="29dp"
-            android:layout_marginStart="29dp"
-            android:layout_marginTop="20dp"
-            android:baselineAlignBottom="false"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/lingkaran" />
-
-        <ImageButton
-            android:id="@+id/segitiga"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@+id/lingkaran"
-            android:layout_toEndOf="@+id/persegi"
-            android:layout_toRightOf="@+id/persegi"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/segitiga" />
-
-        <ImageButton
-            android:id="@+id/persegipanjang"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_above="@+id/segitiga"
-            android:layout_toEndOf="@+id/persegi"
-            android:layout_toRightOf="@+id/persegi"
-            android:cropToPadding="false"
-            android:elevation="0dp"
-            android:saveEnabled="false"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/persegipanjang2" />
-
-    </RelativeLayout>
-</ScrollView>
