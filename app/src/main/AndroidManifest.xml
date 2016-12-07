@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk.MainActivity"
             android:label="@string/app_name" />
         <activity android:name=".lingkaran" />
         <activity android:name=".persegipanjang" />
@@ -37,6 +37,10 @@
         <activity android:name=".segitiga" />
         <activity android:name=".jajargenjang" />
         <activity android:name=".ketupat" />
+        <activity android:name=".pembahasan">
+            <activity android:name=".HotelAdapter" />
+            <activity android:name=".Hotel" />
+        </activity>
     </application>
 
 </manifest>
