@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">HitungBangunYuk</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Friend!</string>
+    <string name="slide_1_desc">The easiest way to help your math homework, specially to calculate geometry!</string>
+
+    <string name="slide_2_title">Recomended for Children</string>
+    <string name="slide_2_desc">Recommended for children, because of this application is very interesting</string>
+
+    <string name="slide_3_title">Promblem Solving</string>
+    <string name="slide_3_desc">Provide solutions for your homework. Especially with a discussion or problem solving</string>
+
+    <string name="slide_4_title">Thank you for Dowloading</string>
+    <string name="slide_4_desc">Please enjoy and safely use the application!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
 </resources>

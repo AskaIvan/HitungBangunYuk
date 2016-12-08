@@ -5,6 +5,7 @@
     android:id="@+id/activity_persegipanjang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -59,9 +60,9 @@
         android:id="@+id/tvHasilPersegiPanjang"
         android:layout_width="300dp"
         android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
         android:layout_below="@+id/buttonHitungT"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp"
         android:fontFamily="casual"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
@@ -76,5 +77,6 @@
         android:layout_toStartOf="@+id/imageView2"
         android:ems="10"
         android:hint="l ="
-        android:inputType="number"/>
+        android:inputType="number"
+        android:paddingTop="14dp" />
 </RelativeLayout>

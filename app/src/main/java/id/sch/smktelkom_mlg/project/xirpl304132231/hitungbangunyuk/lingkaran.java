@@ -34,7 +34,7 @@ public class lingkaran extends AppCompatActivity {
         if (isValid()) {
             int a = etJari.getText().toString().isEmpty() ? 0 : Integer.parseInt(etJari.getText().toString());
             //luas & keliling
-            tvHasil.setText("Luas :" + (int) (Math.PI * a * a) + "\n" + "Keliling :" + (int) (Math.PI * 2 * a));
+            tvHasil.setText("Luas : " + (int) (Math.PI * a * a) + "\n" + "Keliling : " + (int) (Math.PI * 2 * a));
         }
     }
 

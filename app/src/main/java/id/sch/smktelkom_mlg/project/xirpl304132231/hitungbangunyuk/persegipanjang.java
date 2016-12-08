@@ -33,7 +33,7 @@ public class persegipanjang extends AppCompatActivity {
             int b = etPanjang.getText().toString().isEmpty() ? 0 : Integer.parseInt(etPanjang.getText().toString());
 
             //luas & Keliling
-            tvHasil.setText("Luas :" + (a * b) + "\n" + "Keliling :" + (a + b + a + b));
+            tvHasil.setText("Luas : " + (a * b) + "\n" + "Keliling : " + (a + b + a + b));
         }
     }
 
