@@ -11,7 +11,7 @@
         android:layout_height="@dimen/img_width_height"
         android:layout_weight="0.54"
         android:paddingTop="100dp"
-        android:src="@drawable/ic_discount" />
+        android:src="@drawable/slide3" />
 
     <TextView
         android:layout_width="match_parent"
