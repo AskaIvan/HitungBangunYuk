@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="segitiga">
+        <item>Segitiga Sama Sisi</item>
+        <item>Segitiga Sama Kaki</item>
+        <item>Segitiga Sama Sembarang</item>
+    </string-array>
+</resources>

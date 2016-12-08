@@ -1,79 +1,83 @@
 package id.sch.smktelkom_mlg.project.xirpl304132231.hitungbangunyuk;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Spinner;
+
 
 /**
  * Created by Icha on 16-Nov-16.
  */
 public class segitiga extends AppCompatActivity {
-    EditText etTinggi;
-    EditText etAlas;
-    TextView tvHasil;
-    Button buttonSegitiga;
+    Spinner spinner;
+    Button bSegitiga;
+    String[] SPINNERVALUES = {"Sama Sisi", "Sama Kaki", "Sembarang"};
+    String SpinnerValue;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segitiga);
 
-        etTinggi = (EditText) findViewById(R.id.editTextTinggi);
-        etAlas = (EditText) findViewById(R.id.editTextAlas);
-        tvHasil = (TextView) findViewById(R.id.tvHasilSegitiga);
-        buttonSegitiga = (Button) findViewById(R.id.buttonHitungSegitiga);
+        spinner = (Spinner) findViewById(R.id.spinnerSegitiga);
+        bSegitiga = (Button) findViewById(R.id.buttonHitungS);
 
-        findViewById(R.id.buttonHitungSegitiga).setOnClickListener(new View.OnClickListener() {
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(segitiga.this, android.R.layout.simple_list_item_1, SPINNERVALUES);
+
+        spinner.setAdapter(adapter);
+
+        //Adding setOnItemSelectedListener method on spinner.
+        spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+
             @Override
-            public void onClick(View view) {
-                doHitung();
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id) {
+
+                SpinnerValue = (String) spinner.getSelectedItem();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+
+        bSegitiga.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+
+                switch (SpinnerValue) {
+
+                    case "Sama Sisi":
+                        intent = new Intent(segitiga.this, Samasisi.class);
+                        startActivity(intent);
+                        break;
+
+                    case "Sama Kaki":
+                        intent = new Intent(segitiga.this, SamaKaki.class);
+                        startActivity(intent);
+                        break;
+
+                    case "Sembarang":
+                        intent = new Intent(segitiga.this, Sembarang.class);
+                        startActivity(intent);
+                        break;
+
+
+                }
             }
         });
 
     }
-
-    private void doHitung() {
-        if (isValid()) {
-            int a = etTinggi.getText().toString().isEmpty() ? 0 : Integer.parseInt(etTinggi.getText().toString());
-            int b = etAlas.getText().toString().isEmpty() ? 0 : Integer.parseInt(etAlas.getText().toString());
-
-            double luas = (0.5 * b * a);
-            double keliling = (((Math.sqrt(Math.pow(b / 2, 2) + Math.pow(a, 2))) * 2) + b);
-
-            //luas dan keliling
-            tvHasil.setText("Luas Segitiga = " + luas + "\n" + "Keliling Segitiga = " + keliling);
-        }
-    }
-
-    private boolean isValid() {
-        boolean valid = true;
-
-        String a = etTinggi.getText().toString();
-        String b = etAlas.getText().toString();
-
-        if (a.isEmpty()) {
-            etTinggi.setError("Tinggi belum diisi");
-            valid = false;
-        } else if (a.length() > 2) {
-            etTinggi.setError("Hanya bisa puluhan");
-            valid = false;
-        } else {
-            etTinggi.setError(null);
-        }
-
-        if (b.isEmpty()) {
-            etAlas.setError("Alas belum diisi");
-            valid = false;
-        } else if (b.length() > 2) {
-            etAlas.setError("Hanya bisa puluhan");
-            valid = false;
-        } else {
-            etAlas.setError(null);
-        }
-
-        return valid;
-    }
 }
+

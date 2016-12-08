@@ -42,10 +42,12 @@
         <activity android:name=".segitiga" />
         <activity android:name=".jajargenjang" />
         <activity android:name=".ketupat" />
-        <activity android:name=".pembahasan">
-            <activity android:name=".HotelAdapter" />
-            <activity android:name=".Hotel" />
-        </activity>
+        <activity android:name=".pembahasan"></activity>
+        <activity android:name=".Samasisi" />
+        <activity android:name=".SamaKaki" />
+        <activity android:name=".Sembarang" />
+
+
     </application>
 
 </manifest>
