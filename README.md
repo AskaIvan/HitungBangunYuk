@@ -3,6 +3,14 @@
 #Penjelasan
 Aplikasi ini berguna untuk memudahkan murid Sekolah Dasar menghitung bangun dasar yang dipelajari di sekolah
 
+#Gambar
+  ![Image](https://github.com/AskaIvan/HitungBangunYuk/blob/master/SATU.jpg)
+  ![Image](https://github.com/AskaIvan/HitungBangunYuk/blob/master/DUA.jpg)
+  ![Image](https://github.com/AskaIvan/HitungBangunYuk/blob/master/TIGA.jpg)
+  
+#Video
+    https://youtu.be/PYgw3rEFmtc
+
 #Identitas
 1. Anggota 1
 
